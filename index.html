@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaskVCT - Voice Conversion Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <div id="app">
+        <header class="bg-white shadow-sm">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <h1 class="text-2xl font-bold text-gray-900">MaskVCT</h1>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Demo Section -->
+            <section class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">MaskVCT: Masked Voice Codec Transformer for Zero-Shot Voice Conversion With Increased Controllability via Multiple Guidances</h2>
+                    <p class="text-xl text-gray-600">Zerp-Shot Voice Conversion Samples</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-4 px-4 w-1/3">Source Speaker</th>
+                                <th class="text-left py-4 px-4 w-1/3">Target Speaker</th>
+                                <th class="text-left py-4 px-4 w-1/3">Converted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">French</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/French/lupincontresholme_3153.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">Hungarian</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/French/egri_csillagok_4514.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">MaskVCT</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/French/lupincontresholme_3153_to_egri_csillagok_4514.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">French</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/French/lupincontresholme_3153.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">Greek</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/French/Paramythi_horis_onoma_1843.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">MaskVCT</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/French/lupincontresholme_3153_to_Paramythi_horis_onoma_1843.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-4 px-4 w-1/3">Source Speaker</th>
+                                <th class="text-left py-4 px-4 w-1/3">Target Speaker</th>
+                                <th class="text-left py-4 px-4 w-1/3">Converted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">Finnish</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/Finnish/salmelan_heinatalkoot_1055.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">Dutch</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/Finnish/20000_mijlen_6494.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">MaskVCT</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/Finnish/salmelan_heinatalkoot_1055_to_20000_mijlen_6494.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">Finnish</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/Finnish/salmelan_heinatalkoot_1055.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">Russian</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/Finnish/shortstories_childrenadults_3882.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <p class="font-medium mb-2">MaskVCT</p>
+                                    <audio controls class="w-full">
+                                        <source src="audio/Cross/Finnish/salmelan_heinatalkoot_1055_to_shortstories_childrenadults_3882.wav" type="audio/wav">
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-white mt-12">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-gray-500">© 2024 MaskVCT. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
